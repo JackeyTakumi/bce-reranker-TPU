@@ -40,7 +40,7 @@ python3 export_onnx.py
 # 编译模型（此步骤需要在已经部署好的tpu-mlir docker环境中进行）
 ./compile.sh
 ```
-完成此步骤后，将会在bce-reranker-TPU/compile/bmodel下生成bce-reranker-base_v1.bmodel，默认生成F16 4batch模型，可通过compile脚本中的参数进行修改。
+完成此步骤后，将会在bce-reranker-TPU/compile/bmodel下生成bce-reranker-base_v1.bmodel，默认生成F16 3batch模型，可通过compile脚本中的参数进行修改。
 
 ### 例程运行
 在准备好模型与token配置后，运行下列命令进行推理
